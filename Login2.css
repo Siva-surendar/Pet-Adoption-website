@@ -1,0 +1,209 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff7d5; /* Light yellow background */
+}
+  
+.login-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: #fff7d5;
+  overflow: hidden;
+}
+
+.login-illustration {
+  flex: 1;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-illustration img {
+  width: 80%;
+  height: auto;
+  padding: 350px;
+}
+
+.login-box {
+  flex: 1;
+  margin: 130px 200px;
+  padding-top: 30px;
+  padding-right: 15px;
+  background: #ffffff; /* White background for the login box */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.logo img {
+  width: 90px;
+  height: 75px;
+}
+
+h2 {
+  font-family: 'Arial', sans-serif; /* Consistent font for "Login" */
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #656161;
+}
+
+form {
+  width: 100%;
+  max-width: 300px;
+}
+
+form label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  margin-left: 4px;
+  color: #333;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: white; /* Light gray background for inputs */
+}
+
+form input:focus {
+  outline: none;
+  border-color: #d4a317;
+  background-color: #fff; /* White background when focused */
+}
+
+form button {
+  width: 108%;
+  padding: 10px;
+  background-color: #d4a317;
+  margin-top: 15px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #c09515;
+}
+
+p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+p a {
+  color: #d4a317;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+.forgot{
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.register{
+  margin-bottom: 3px;
+}
+ /* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .login-box {
+    margin: 50px 30px; /* Reduce margins for medium-sized screens */
+    width: 80%; /* Make the login box width responsive */
+  }
+
+  .illustration img {
+    width: 60%; /* Adjust illustration size */
+    padding: 0; /* Remove excess padding */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack illustration and login box vertically */
+  }
+
+  .illustration {
+    flex: none;
+    padding: 10px; /* Adjust padding for small screens */
+    order: 2; /* Place below the login box */
+  }
+
+  .illustration img {
+    width: 70%; /* Adjust illustration size further for small screens */
+  }
+
+  .login-box {
+    margin: 20px auto; /* Center the login box */
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 20px; /* Add padding for better spacing */
+  }
+
+  form button {
+    width: 100%; /* Make the button span the full width */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2 {
+    font-size: 18px; /* Reduce the size of the "Login" title */
+  }
+
+  form input {
+    padding: 8px; /* Adjust padding for smaller inputs */
+    font-size: 14px; /* Adjust font size for inputs */
+  }
+
+  form button {
+    font-size: 14px; /* Adjust font size for the button */
+    padding: 10px;
+  }
+
+  p {
+    font-size: 12px; /* Reduce font size for text */
+  }
+
+  .illustration img {
+    width: 50%; /* Reduce illustration size further for mobile devices */
+  }
+}
+.input-group .error{
+  color:rgb(242, 18, 18);
+  text-align: left;
+  margin-left: 4px;
+  font-size: 14px;
+  padding-top: 3px;
+}
+.input-group.success input{
+  border-color: #0cc477;
+}
+
+.input-group.error input{
+  border-color:rgb(206, 67, 67);
+}
+
+
+

@@ -1,0 +1,335 @@
+/* General Styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+}
+.nav-links {
+    display: flex;
+    margin-right: auto; /* Align links to the left */
+    gap: 15px;
+}
+.nav-links li {
+    margin: 0 10px;
+    list-style: none;
+}
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+}
+.contact-btn {
+    background-color: #B68600;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    background-color: #B68600;
+    padding: 20px;
+}
+.hero-text {
+    flex: 1;
+}
+.hero-text h1 {
+    font-size: 4.5rem;
+    font-weight: 200;
+    margin-bottom: 40px;
+    color: white;
+    padding-right: 20px;
+}
+.hero-text p {
+    color: rgb(200, 197, 197);
+    font-size: 1.3rem;
+}
+.hero-image img {
+    width: 83%;
+    float: right;
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+
+/* Filter Section */
+.filter-section {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.filter-section h2{
+    background-color: #f8e9c5;
+    border-radius: 8px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+.filters {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+.filters select, .filters .search-btn {
+    padding: 10px;
+}
+
+/* Pet Profiles */
+.pet-profiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.profile {
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 8px;
+}
+.profile img {
+    width: 100%;
+    border-radius: 8px;
+}
+.nav-links li a.Home {
+    margin-left: 30px;
+}
+
+/* Popup Modal */
+.popup-toggle {
+    display: none;
+}
+.popup-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+.popup-toggle:checked + .popup-modal {
+    display: flex;
+}
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+.modal-content h2 {
+    margin-bottom: 10px;
+    text-align: left;
+}
+.modal-content h4 {
+    margin-bottom: 10px;
+    text-align: left;
+}
+.modal-content h5 {
+    margin-bottom: 10px;
+    text-align: left;
+}
+.modal-content p {
+    text-align: left;
+}
+.modal-content img {
+    margin-right: 260px;
+    width: 50%;
+}
+.modal-content input, 
+.modal-content textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    margin-left: 190px;
+    border-radius: 8px;
+}
+.modal-content label {
+    margin-left: 70px;
+    text-align: left;
+}
+.modal-content .fullname {
+    margin-left: 100px;
+}
+.modal-content .address{
+    margin-left: 90px;
+}
+.modal-content .phone{
+    margin-left: 80px;
+}
+.modal-content .message {
+    height: 80px;
+    margin-bottom: 20px;
+}
+.modal-content form {
+    margin-top: -300px;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #aaa;
+}
+.close-btn:hover {
+    color: black;
+}
+.modal-content .button {
+    display: flex;
+    justify-content: center;
+    gap: 280px;
+}
+.modal-content button {
+    padding: 5px 13px;
+    border-radius: 12px;
+}
+.modal-content .button-send button{
+    background-color: #B68600;
+    color: white;
+}
+.modal-content .button-close button{
+    background-color: white;
+}
+.modal-content .button-send button:hover {
+    background-color: #c09515;
+}
+.modal-content .button-close button:hover{
+    background-color:rgb(210, 203, 203) ;
+}
+.navbar .logo img {
+    width: 30px;
+    height: auto;
+}
+/* Footer Styles */
+.footer {
+    background-color: #f7db60;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-contact,
+.footer-links {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-contact h4,
+.footer-links h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.footer-contact p,
+.footer-links ul {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #555;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+    color: #B68600;
+}
+
+.footer-bottom {
+    background-color: #e8e8e8;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.85rem;
+    color: #777;
+}
+/* Footer Styles */
+.footer {
+    background-color: #c4c2be;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.footer-contact, .footer-links {
+    flex: 1;
+}
+
+.footer-contact p, .footer-links ul {
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+.navbar ul li a:hover {
+    text-decoration: underline;
+    color: #fdbb05;
+}
+
+.nav-links li a.active {
+    color: #000; /* Change the color to dark for active link */
+    font-weight: bold; /* Optional: Makes the active link bold */
+}
+
+
