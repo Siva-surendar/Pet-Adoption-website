@@ -50,8 +50,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 $mail->isSMTP();
                 $mail->Host = 'smtp-relay.brevo.com';  // Brevo SMTP server
                 $mail->SMTPAuth = true;
-                $mail->Username = '8201d7001@smtp-brevo.com';  // Replace with your Brevo email
-                $mail->Password = 'xsmtpsib-391e065657f79819d588b1a925180942e98c57eb0977374cc0edeebf967fe82a-r9Mt0bPgZXcHV1JF';  // Replace with your Brevo API key
+                $mail->Username = 'your-login';  // Replace with your Brevo email
+                $mail->Password = 'your-key';  // Replace with your Brevo API key
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
                 $mail->Port = 587;  // Port for TLS encryption
 
